@@ -51,7 +51,9 @@ hex_sticker <- sticker(hex_plot, package = "R\nUsers\nLeeds",
 # save out
 save_sticker(
   'rleeds_hex_sticker.png',
-  hex_sticker
+  hex_sticker,
+  # 320 = retina, going higher for super crispness
+  dpi = 480 
 )
 
 # Printing ----------------------------------------------------------------

@@ -45,16 +45,10 @@ hex_sticker <- sticker(hex_plot, package = "R\nUsers\nLeeds",
         url = "r-users-leeds.netlify.com", 
         u_size = url_text_size, # url text size
         u_color = "#2F4F4F", # url color
-        u_family = "mono" # url font family
+        u_family = "mono", # url font family
+        filename = 'rleeds_hex_sticker.png',
+        dpi = 480 
         )
-
-# save out
-save_sticker(
-  'rleeds_hex_sticker.png',
-  hex_sticker,
-  # 320 = retina, going higher for super crispness
-  dpi = 480 
-)
 
 # Printing ----------------------------------------------------------------
 # https://github.com/rladies/starter-kit/tree/master/stickers
